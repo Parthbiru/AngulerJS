@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>AngulerJS diretives</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="" ng-init="persons=[{firstname:'parth',lastname:'biru'},{firstname:'sanket',lastname:'yadav'},{firstname:'vishal',lastname:'patil'}]">
+                <p>Enter Your Name Here</p>
+                <p>name: <input type="text" ng-model="name"></p>
+                <p ng-bind="name"></p>
+
+                <p>list of person</p>
+                <ol>
+                    <li ng-repeat="persons">
+                        {{'first name: '+person.firstname +'   lastname: '+person.lastname}}
+
+                    </li>
+                </ol>
+
+        </div>
+    </body>
+</html>
